@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#gameArea {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+
+#character {
+    width: 30px;  /* Smaller character */
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 360px; /* Starting at bottom */
+    left: 10px; /* Starting at the left side */
+}
+
+#goal {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.obstacle {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+}
+
+#obstacle1 {
+    top: 120px;
+    left: 100px; /* Positioned ahead */
+}
+
+#obstacle2 {
+    top: 250px;
+    right: 100px; /* Positioned ahead */
+}
+
+#obstacle3 {
+    top: 330px;
+    left: 150px; /* Positioned ahead */
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
